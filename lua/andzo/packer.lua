@@ -36,6 +36,7 @@ return require('packer').startup(function(use)
   -- UNDO TREE
   use("mbbill/undotree")
 
+<<<<<<< Updated upstream
   -- GIT 
   use("tpope/vim-fugitive")
 
@@ -61,5 +62,9 @@ return require('packer').startup(function(use)
 
   ]]--
 
+=======
+  use("tpope/vim-fugitive")
+S
+>>>>>>> Stashed changes
 end)
 

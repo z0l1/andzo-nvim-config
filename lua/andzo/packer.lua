@@ -39,6 +39,7 @@ return require('packer').startup(function(use)
   -- GIT 
   use("tpope/vim-fugitive")
 
+  --[[
   -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -57,6 +58,8 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 	  }
   }
+
+  ]]--
 
 end)
 

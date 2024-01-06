@@ -19,7 +19,13 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
+
+local homeDir = os.getenv("HOME")
+if homeDir == nil then
+    homeDir = os.getenv("userprofile")
+end
+
+vim.opt.undodir = homeDir .. "/.vim/undodir"
 vim.opt.undofile = true
 
 -- mixed feelings about hlsearch

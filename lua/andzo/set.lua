@@ -1,3 +1,5 @@
+vim.g.mapleader = " "
+
 -- CURSOR
 vim.opt.guicursor = "n:block-Cursor,i:block-CursorI"
 vim.cmd 'hi CursorI guifg=bg guibg=white'
@@ -37,4 +39,3 @@ vim.opt.updatetime = 50
 -- used to use 100 
 vim.opt.colorcolumn = "80"
 
-vim.g.mapleader = " "

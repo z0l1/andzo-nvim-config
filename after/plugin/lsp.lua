@@ -1,4 +1,3 @@
---[[
 local lsp_zero = require('lsp-zero')
 
 lsp_zero.on_attach(function(client, bufnr)
@@ -21,7 +20,7 @@ end)
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
-	ensure_installed = {'tsserver', 'rust_analyzer'},
+	ensure_installed = { 'tsserver', 'rust_analyzer', "gopls"  },
 
 	handlers = {
 
@@ -66,6 +65,4 @@ cmp.setup({
 	}),
 })
 
-]]--
 
-print("lsp stuff ran")

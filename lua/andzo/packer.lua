@@ -36,11 +36,9 @@ return require('packer').startup(function(use)
   -- UNDO TREE
   use("mbbill/undotree")
 
-<<<<<<< Updated upstream
   -- GIT 
   use("tpope/vim-fugitive")
 
-  --[[
   -- LSP
   use {
 	  'VonHeikemen/lsp-zero.nvim',
@@ -60,11 +58,9 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  ]]--
+  use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+      require("toggleterm").setup()
+  end}
 
-=======
-  use("tpope/vim-fugitive")
-S
->>>>>>> Stashed changes
 end)
 

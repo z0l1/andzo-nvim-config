@@ -24,7 +24,10 @@ vim.keymap.set("n", "N", "Nzzzv")
 -- no override buffer when overriding yanked stuff
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
-vim.keymap.set("n", "<leader>y", "\"+y")
-vim.keymap.set("v", "<leader>y", "\"+y")
-vim.keymap.set("n", "<leader>Y", "\"+Y")
+-- using system clipboard
+-- when copying in VISUAL mode
+vim.keymap.set("v", "<C-y>", "\"+y")
+-- and when pasting in NORMAL and VISUAL mode
+vim.keymap.set("n", "<C-p>", "\"+p")
+vim.keymap.set("v", "<C-p>", "\"+p")
 

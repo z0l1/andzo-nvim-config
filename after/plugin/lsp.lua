@@ -22,6 +22,7 @@ lsp_zero.on_attach(function(client, bufnr)
     -- vim.api.nvim_buf_set_keymap(bufnr, "n", "<leader>f",
 
     -- idk chatgpt code
+    --[[
     if client.server_capabilities.documentFormattingProvider then
         vim.api.nvim_create_autocmd("BufWritePre", {
             group = vim.api.nvim_create_augroup("LspFormatting", {}),
@@ -32,6 +33,7 @@ lsp_zero.on_attach(function(client, bufnr)
             end
         })
     end
+    ]]--
 end)
 
 

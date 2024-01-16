@@ -6,4 +6,22 @@ a tad bit inspired by theprimeagen's configuration
 <sup><sub>and made some modifications</sub></sup>
 
 
+## download repo
+on windows
+```
+git clone https://github.com/z0l1/andzo-nvim-config.git $env:localappdata/nvim
+```
+
+on linux and mac
+```
+git clone https://github.com/z0l1/andzo-nvim-config.git $HOME/.config/nvim
+```
+
+## install packages
+and after opening NeoVim
+```
+:PackerSync
+```
+
+
 
